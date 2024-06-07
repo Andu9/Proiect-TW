@@ -1,0 +1,2 @@
+Pentru a porni server-ul asigurati-va ca aveti instalat Node.js si pachetele express, body-parser, cors, fs, path, express-session, bcryptjs. Dupa instalarea Node.js-ului, instalati pachetele prin comanda:
+npm install express body-parser cors express-session bcryptjs

@@ -1,0 +1,72 @@
+body {
+    background-image: url("images/back.webp");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 3rem;
+    height: 70px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #94549f;
+}
+
+.descriere {
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.descriere p {
+    text-align: center;
+    font-size: 80px;
+}
+
+.descriere a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+
+.plane-animation {
+    margin-top: -7%;
+    margin-bottom: 7%;
+    position: relative;
+    animation: planeMove 10s infinite linear;
+}
+
+@keyframes planeMove {
+    0% {
+        transform: translateX(2vw) scaleX(1);
+    }
+    50% {
+        transform: translateX(calc(0%)) scaleX(-1);
+    }
+    100% {
+        transform: translateX(2vw) scaleX(1);
+    }
+}
+
+.plane-animation img {
+    width: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+    .plane-animation img {
+        height: 300px;
+        width: 200px;
+    }
+}

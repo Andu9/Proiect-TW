@@ -1,0 +1,80 @@
+body {
+    margin: 10px;
+    background-image: url("images/back.webp");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 3rem;
+    height: 70px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #94549f;
+}
+
+#Introducere > h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}   
+
+#Introducere > p {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.photo-container p {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.photo-container img {
+    width: 700px;
+    height: 500px;
+}
+
+footer {
+    text-align: center;
+}
+
+.photo-container img {
+    transition: width 4s, height 4s, rotate 2s;
+}
+
+.photo-container:hover img {
+    width: 400px;
+    height: 400px;
+    rotate: 360deg;
+}
+
+@media screen and (max-width: 1000px) {
+    .photo-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .photo-container p {
+        font-size: 25px;
+        color: white;
+    }
+
+    .photo-container img {
+        width: 480px;
+        height: 300px;
+    }
+}
